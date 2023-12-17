@@ -149,7 +149,3 @@
 .reply:focus-within .reply__column:last-child {
   width: 100%;
 }
-
-.reply:focus-within .reply__column:first-child {
-
-}
