@@ -1,0 +1,10 @@
+.mark {
+  display: block;
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="stylesheet" href="./css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chats - Kokoa Clone</title>
+</head>
+<body>
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>18:43</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span>
+      <i class="fa-solid fa-battery-full fa-lg"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <header class="screen-header">
+    <h1 class="screen-header__title">Find</h1>
+    <div class="screen-header__icons">
+      <span>
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </span>
+      <span>
+        <i class="fa-solid fa-gear fa-lg"><span class="mark"></span></i>
+      </span>
+    </div>
+  </header>
+
+  <main class="main-screen">
+    <div class="icon-row">
+      <div class="icon-row__icon">
+        <i class="fa-solid fa-qrcode"></i>
+        <span>QR Code</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-regular fa-address-book"></i>
+        <span>Add by Contacts</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-solid fa-fingerprint"></i>
+        <span>Add by ID</span>
+      </div>
+      <div class="icon-row__icon">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Invite</span>
+      </div>
+    </div>
+
+    <div class="recommended-friends">
+      <h6 class="recommended-friends__title">Recommended Friends</h6>
+      <span>You have no recommended friends.</span>
+    </div>
+
+    <div class="open-chat">
+      <div class="open-chat__header">
+        <h4 class="open-chat__title">Open Chat</h4>
+        <span>Go to Openchat Home
+          <i class="fa-solid fa-chevron-right fa-xs"></i>
+        </span>
+      </div>
+      <div class="open-post">
+        <div class="open-post-column">
+          <h5 class="open-post__title">#BTS</h5>
+          <h6 class="open-post__hashtags">#bts#army#friends</h6>
+          <div class="open-post__members">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw4QEBANDhANDw0ODQ0PDxANDRAQDw8NFREWFhURExMYHSggGBolGxMTITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFw8QFysZFRktKysrKysrKzcrLS4tKy03KzcrKzctLSstLSsrKysrKzc3KysrKzcrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QALBABAAIABAQFBAMBAQAAAAAAAAECAwQRIQUxQVESImFxgTKhscGR0fCicv/EABgBAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGxEBAQEBAQEBAQAAAAAAAAAAAAECETESIVH/2gAMAwEAAhEDEQA/APXAO9yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgDNazO0bz2hKpw/EnnER7nYcRBPjhk9bx8Qxbhlulon3iUfUTyoI74mUxK841jvG7gmXqAAAAAAAAAAAAAAAAAAAAAABKymTm+87U+8+xkct451n6Y5+vot4jTly6R0hTWl5GmFg1rERWIj16/wAtwZercAAP96I2YyVb8vLbvH4SRPeFihxcO1Z8MxpP5aLzMYEXr4Z205T2lSXrMTNZ6S1zexnYwAsgAAAAAAAAAAAAAAAANNdIjr+dRIyFNcSO0bov5CRbZfCilYrHbf3bgxrWACAAAAAV/FMHliR7T+v2sHPM08VLV9Jn5hbN5Sz8UQDZkAAAAAAAAAAAAAAAAJ3CY81p7VQUzhc+eY71/aNeJnq1AYNAAAAAAAkYtOkTPaNSeigtG8+8sGo6IyAAAAAAAAAAAAAAAAHTLYnhvW3adPiXM/os7Dr0IhcPzHir4JnzV5esJrCzjUAQAAAACNxDE8NJjraNErl/uilzuY8dtvojaF856i1HAaswAAAAAAAAAAAAAAAAAG1bzE6xtMbrfK5uuJz2t2UxHf8Aatz1M09CKvA4haNrx4o9NpTMPOYc9dJ7TszueL9SBrF46THxJbErHOYj5VS2J5a9EXEz+HHKZtPpt91fmM3a+3KvaFpm1F0757O660p9PWY6+yCDWTkZ29AEgAAAAAAAAAAAAAAAAAAGrph5e9uVZn32gHM0TK8Ov1msfd1jhcdbz8RCPqJ+arfCzos44bTvb7E8Mp3t9pR9w+arWFhbhk9LR8w4XyGJHSJ9pPqI4jDa1Zj6omPeNGq3QAAAAAAAAAAAAAAAABvhYc2nSN5/EA1jt1nolZfIWt9Xlr90zKZKtN581p78o9kpnd/xeRxwsrh15REz3neXYFOrACAAAIgAYtSJ2mIn3hDxuHVnevln/lNEynIosXBtTa0aevSflzegvSLbTETHqq83kprrNd6xzjs0zv8AqlnEMBdUAAAAAAAAAAAj7g2w8ObWiK7yucvgVw40iN+s95a5PL+Cu/1TznskMtaXkAFFgAAAAAAAAAABIrs9k9PPXlzmP2r/AFehVPEMv4LeKPpty9J7L5quoiANVABAAAAAAAJvDcHW3jnlXl7ofp1XeVwvDSsems+6ur+JzHUBi0AAAAAAAAAAAAAAGmLhxas1nrDclI8/ak1maz0lhO4rhaWi/eNJ90FtL2M7OACUAAAAAAO2Tw/Feseu67VfCq+eZ7VWjLdaZ8AFEgAAAAAAAAAAAAAAAOGeprSe8eb+FK9BaNYmO8T+FBMabestcKbYAXVAAAAAAWHCed//ADCykGO/WmfGAFUgAAAAAAAAAAAAAAAMx/f4efxPqn3kGmFNNQGioAD/2Q==" >
+            <span class="open-post__member-count">902 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
+          </div>
+        </div>
+        <div class="open-post-column">
+          <div class="open-post__photo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw4QEBANDhANDw0ODQ0PDxANDRAQDw8NFREWFhURExMYHSggGBolGxMTITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFw8QFysZFRktKysrKysrKzcrLS4tKy03KzcrKzctLSstLSsrKysrKzc3KysrKzcrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QALBABAAIABAQFBAMBAQAAAAAAAAECAwQRIQUxQVESImFxgTKhscGR0fCicv/EABgBAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGxEBAQEBAQEBAQAAAAAAAAAAAAECETESIVH/2gAMAwEAAhEDEQA/APXAO9yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgDNazO0bz2hKpw/EnnER7nYcRBPjhk9bx8Qxbhlulon3iUfUTyoI74mUxK841jvG7gmXqAAAAAAAAAAAAAAAAAAAAAABKymTm+87U+8+xkct451n6Y5+vot4jTly6R0hTWl5GmFg1rERWIj16/wAtwZercAAP96I2YyVb8vLbvH4SRPeFihxcO1Z8MxpP5aLzMYEXr4Z205T2lSXrMTNZ6S1zexnYwAsgAAAAAAAAAAAAAAAANNdIjr+dRIyFNcSO0bov5CRbZfCilYrHbf3bgxrWACAAAAAV/FMHliR7T+v2sHPM08VLV9Jn5hbN5Sz8UQDZkAAAAAAAAAAAAAAAAJ3CY81p7VQUzhc+eY71/aNeJnq1AYNAAAAAAAkYtOkTPaNSeigtG8+8sGo6IyAAAAAAAAAAAAAAAAHTLYnhvW3adPiXM/os7Dr0IhcPzHir4JnzV5esJrCzjUAQAAAACNxDE8NJjraNErl/uilzuY8dtvojaF856i1HAaswAAAAAAAAAAAAAAAAAG1bzE6xtMbrfK5uuJz2t2UxHf8Aatz1M09CKvA4haNrx4o9NpTMPOYc9dJ7TszueL9SBrF46THxJbErHOYj5VS2J5a9EXEz+HHKZtPpt91fmM3a+3KvaFpm1F0757O660p9PWY6+yCDWTkZ29AEgAAAAAAAAAAAAAAAAAAGrph5e9uVZn32gHM0TK8Ov1msfd1jhcdbz8RCPqJ+arfCzos44bTvb7E8Mp3t9pR9w+arWFhbhk9LR8w4XyGJHSJ9pPqI4jDa1Zj6omPeNGq3QAAAAAAAAAAAAAAAABvhYc2nSN5/EA1jt1nolZfIWt9Xlr90zKZKtN581p78o9kpnd/xeRxwsrh15REz3neXYFOrACAAAIgAYtSJ2mIn3hDxuHVnevln/lNEynIosXBtTa0aevSflzegvSLbTETHqq83kprrNd6xzjs0zv8AqlnEMBdUAAAAAAAAAAAj7g2w8ObWiK7yucvgVw40iN+s95a5PL+Cu/1TznskMtaXkAFFgAAAAAAAAAABIrs9k9PPXlzmP2r/AFehVPEMv4LeKPpty9J7L5quoiANVABAAAAAAAJvDcHW3jnlXl7ofp1XeVwvDSsems+6ur+JzHUBi0AAAAAAAAAAAAAAGmLhxas1nrDclI8/ak1maz0lhO4rhaWi/eNJ90FtL2M7OACUAAAAAAO2Tw/Feseu67VfCq+eZ7VWjLdaZ8AFEgAAAAAAAAAAAAAAAOGeprSe8eb+FK9BaNYmO8T+FBMabestcKbYAXVAAAAAAWHCed//ADCykGO/WmfGAFUgAAAAAAAAAAAAAAAMx/f4efxPqn3kGmFNNQGioAD/2Q==" >
+            <div class="open-post__heart-count ">
+              <i class="fa-solid fa-heart fa-xs"></i>
+              <span>326</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <span class="nav__notification badge">12</span>
+          <i class="fa-regular fa-comment fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html">
+          <span class="mark"></span>
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="no-mobile">
+    <span>Your screen is too big</span>
+  </div>
+
+  <script src="https://kit.fontawesome.com/b7cd856555.js" crossorigin="anonymous"></script>
+</body>
+</html>
